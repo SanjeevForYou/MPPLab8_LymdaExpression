@@ -1,0 +1,23 @@
+
+
+1.c. Functional Interface : It is interface with only one abastract method. So a class that implement it
+will havae in effect just one implemented function. It will be an object that acts like a function.
+  eg.
+   interface Comparator<T> {
+	int compare(T o1, T o2);
+}
+The Comparator interface is a declarative wrapper for the function compare
+
+Functor : An implementation of a functional interface is called a functor.  
+Example:
+public class EmployeeNameComparator implements Comparator<Employee> {
+	@Override
+	public int compare(Employee e1, Employee e2) {
+		return e1.name.compareTo(e2.name);
+	}
+}
+
+
+
+
+
